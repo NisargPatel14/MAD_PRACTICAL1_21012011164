@@ -1,0 +1,30 @@
+fun main(){
+    print("Student Enrollment No:")
+    val er= readLine()
+    print("Student Name:")
+    val name= readLine()
+    print("Student Age:")
+    val age= readLine();
+    print("Student Branch:")
+    val branch= readLine()
+    print("Student Class:")
+    val cl=readLine()
+    print("Student Batch:")
+    val batch= readLine()
+    print("Student College Name:")
+    val clg_name= readLine()
+    print("Student University Name:")
+    val uni_name= readLine()
+
+    println("***********")
+    println("Student Data:")
+    println("Enrollment:$er")
+    println("Name:$name")
+    println("Branch:$branch")
+    println("Class:$cl")
+    println("Batch:$batch")
+    println("College Name:$clg_name")
+    println("University Name:$uni_name")
+    println("Age:$age")
+
+}
