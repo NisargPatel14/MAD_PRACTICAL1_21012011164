@@ -8,11 +8,17 @@ fun subNums(a:Int , b:Int , c:Int):Int{
     println("Subtraction of $a , $b , $c is :$sub")
     return sub
 }
-fun multNums(a:Int , b:Int):Int{
-    val mult:Int=a*b
-    println("Multiplication of $a , $b is :$mult")
+fun multNums(a:Int , b:Int , c:Int):Int{
+    val mult:Int=a*b*c
+    println("Multiplication of $a , $b , $c is :$mult")
     return mult
 }
+fun divNums(a:Int , b:Int ):Float{
+    val div=a/b.toFloat()
+    println("Division of $a , $b is :$div")
+    return div
+}
+
 fun main(){
     println("Enter 3 Numbers: ")
     val a= readLine()?.toInt()!!
@@ -21,5 +27,6 @@ fun main(){
 
     addNums(a,b,c)
     subNums(a,b,c)
-    multNums(a,b)
+    multNums(a,b,c)
+    divNums(a,b)
 }
