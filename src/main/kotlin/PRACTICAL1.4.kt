@@ -1,8 +1,6 @@
-import java.util.Scanner
 fun main(){
     print("Enter a number: ")
-    val sc = Scanner(System.`in`)
-    val a=sc.nextInt()
+    val a = readLine()?.toInt()!!
     if(a%2==0){
         print("Even Number")
     }
