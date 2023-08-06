@@ -1,4 +1,4 @@
-# MAD_PRACTICAL_1_21012011164
+# MAD_PRACTICAL1_21012011164
 1.Store & Display values in different variable of different type (Integer, Double, Float, Long, Short, Byte, Char, Boolean, String)
 
 2.Type conversion:Integer to Double, String to Integer, String to Double.
