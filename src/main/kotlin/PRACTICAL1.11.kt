@@ -2,9 +2,6 @@ class Matrix(private val data: Array<DoubleArray>) {
     val rows: Int = data.size
     val cols: Int = if (rows > 0) data[0].size else 0
     operator fun plus(other: Matrix): Matrix {
-        if (rows != other.rows || cols != other.cols)
-            throw IllegalArgumentException("Matrix dimensions do not match for addition")
-
         val resultData = Array(rows) { DoubleArray(cols) }
         for (i in 0 until rows) {
             for (j in 0 until cols) {
@@ -13,10 +10,7 @@ class Matrix(private val data: Array<DoubleArray>) {
         }
         return Matrix(resultData)
     }
-    operator fun minus(other: Matrix): Matrix {
-        if (rows != other.rows || cols != other.cols)
-            throw IllegalArgumentException("Matrix dimensions do not match for subtraction")
-
+     operator fun minus(other: Matrix): Matrix {
         val resultData = Array(rows) { DoubleArray(cols) }
         for (i in 0 until rows) {
             for (j in 0 until cols) {
@@ -25,10 +19,7 @@ class Matrix(private val data: Array<DoubleArray>) {
         }
         return Matrix(resultData)
     }
-    operator fun times(other: Matrix): Matrix {
-        if (cols != other.rows)
-            throw IllegalArgumentException("Matrix dimensions do not match for multiplication")
-
+      operator fun times(other: Matrix): Matrix {
         val resultData = Array(rows) { DoubleArray(other.cols) }
         for (i in 0 until rows) {
             for (j in 0 until other.cols) {
