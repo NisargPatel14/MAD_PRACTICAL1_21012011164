@@ -19,5 +19,4 @@ fun main()
     println("$g is long")
     println("$h is short")
     println("$i is byte")
-
 }
