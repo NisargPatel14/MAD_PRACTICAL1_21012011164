@@ -53,7 +53,7 @@ class Matrix(private val data: Array<DoubleArray>) {
     }
 }
 fun main() {
-    val firstMatrixData = arrayOf(doubleArrayOf(1.0, 2.0, 3.0), doubleArrayOf(4.0, 5.0, 6.0))
+    val firstMatrixData = arrayOf(doubleArrayOf(1.0, 2.0, 3.0), doubleArrayOf(4.0, 5.0, 6.0),doubleArrayOf(7.0, 8.0, 9.0))
     val secondMatrixData = arrayOf(doubleArrayOf(-2.0, 5.0, 3.0), doubleArrayOf(-9.0, 0.0, 4.0), doubleArrayOf(3.0, 9.0, 5.0))
     val secondMatrix1Data = arrayOf(doubleArrayOf(-9.0, 0.0, 3.0), doubleArrayOf(0.0, 4.0, 9.0), doubleArrayOf(9.0, 5.0, 4.0))
 
@@ -77,12 +77,6 @@ fun main() {
     val subtractMatrix = secondMatrix1 - secondMatrix
     println("Subtraction:")
     println(subtractMatrix)
-
-    println("Matrix 1:")
-    println(firstMatrix)
-
-    println("Matrix 2:")
-    println(secondMatrix)
 
     val multiplication = firstMatrix * secondMatrix
     println("Multiplication:")
